@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.ControladorPrincipal">
+   <left>
+      <VBox prefHeight="595.0" prefWidth="250.0" spacing="20.0" style="-fx-background-color: #FFE4E1;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btInicio" alignment="BASELINE_LEFT" onAction="#inicio" prefHeight="62.0" prefWidth="244.0" style="-fx-background-color: #FFC0CB;" text="Menu Inicial" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btSuinos" alignment="BASELINE_LEFT" onAction="#suinos" prefHeight="60.0" prefWidth="241.0" style="-fx-background-color: #FFC0CB;" text="Adicionar/Excluir/Ver Porcos" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btBaias" alignment="BASELINE_LEFT" onAction="#baias" prefHeight="66.0" prefWidth="241.0" style="-fx-background-color: #FFC0CB;" text="Adicionar/Excluir/Ver Baias" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btColocarPorcoNaBaia" alignment="BASELINE_LEFT" onAction="#colocarPorcoNaBaia" prefHeight="62.0" prefWidth="241.0" style="-fx-background-color: #FFC0CB;" text="Colocar Porcos nas Baias" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btRemoverPorcoDaBaia" alignment="BASELINE_LEFT" onAction="#removerPorcoDaBaia" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: #FFC0CB;" text="Tirar Porcos das Baias" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btVizualizarPorcoNaBaia" alignment="BASELINE_LEFT" onAction="#vizualizarPorcoNaBaia" prefHeight="55.0" prefWidth="241.0" style="-fx-background-color: #FFC0CB;" text="Ver Porcos nas Baias" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="130.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/icons8-porco-64.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets left="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #FFB6C1;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="labelPrincipal" alignment="CENTER" layoutX="96.0" layoutY="-3.0" prefHeight="98.0" prefWidth="1080.0" style="-fx-background-color: #FFB6C1;" text="Fazenda de Porcos" textFill="DEEPPINK">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <JFXHamburger prefHeight="100.0" prefWidth="89.0" style="-fx-background-color: #FFB6C1;" stylesheets="@newfile.css" />
+            <ImageView fitHeight="70.0" fitWidth="97.0" layoutX="315.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/icons8-porco-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="97.0" layoutX="863.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/icons8-porco-481.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <Pane prefHeight="600.0" prefWidth="50.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane fx:id="anchorInicial" prefHeight="600.0" prefWidth="880.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="162.0" layoutX="84.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="118.0" fitWidth="142.0" layoutX="396.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="128.0" fitWidth="137.0" layoutX="54.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/3.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="156.0" layoutX="367.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/4.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="121.0" fitWidth="125.0" layoutX="75.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/5.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="126.0" fitWidth="121.0" layoutX="396.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/6.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="127.0" fitWidth="145.0" layoutX="731.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/7.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="119.0" fitWidth="142.0" layoutX="733.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/8.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="117.0" fitWidth="136.0" layoutX="731.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagens/9.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </center>
+</BorderPane>
