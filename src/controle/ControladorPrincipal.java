@@ -25,7 +25,7 @@ public class ControladorPrincipal implements Initializable{
         @FXML
 	private void inicio() {
 		borderPrincipal.setCenter(anchorInicial);
-		labelPrincipal.setText("Bem-vindo á Fazenda de Porcos");
+		labelPrincipal.setText("Bem-vindo ao sistema de gerenciamento de empréstimos");
 	}	
 	@FXML
 	 void suinos() {
