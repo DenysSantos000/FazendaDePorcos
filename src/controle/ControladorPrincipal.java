@@ -32,7 +32,7 @@ public class ControladorPrincipal implements Initializable{
 		try {
 			Parent suinos =  FXMLLoader.load(getClass().getResource("/visao/Suinos.fxml"));
 			borderPrincipal.setCenter(suinos);
-			labelPrincipal.setText("SUÍNOS");
+			labelPrincipal.setText("EMPRESTIMOS");
 		} catch (IOException e) {
 		}	
 	}	
